@@ -7,7 +7,7 @@ Diviser en trois : Systeme, Apllicatif
 
 Firmware documenter
 
-# Deourlement du projet :
+# Deroulement du projet :
 
 Liste du Matériel :
  - Servo moteur ou (simulation)
