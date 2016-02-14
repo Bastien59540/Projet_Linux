@@ -1,28 +1,28 @@
-Descitption et travail à faire.
 
-Imposer : Carte Beagle Bone, Firmware embarqué Base de Linux
-Noyau : Custom (modifier, nom des concepteurs)
+<b>Description du travail à effectuer</b>
 
-Diviser en trois : Systeme, Apllicatif 
+ - Objectif               : contrôle d'un pointeur laser mobile
+ - Matériel imposé        : Carte Beagle Bone
+ - Système d'exploitation : noyau Linux modifié (mention des développeurs au minimum)
 
-Firmware documenter
 
-# Deroulement du projet :
+# Déroulement du projet :
 
-Liste du Matériel :
- - Servo moteur ou (simulation)
+## Liste du Matériel :
+ - Servomoteur
  - Platine DEC
  
-# Langage Utilisé:
-  - Python Pour l'application
+## Langage Utilisé :
+  - Python (application)
+  - langage C (noyau)
   
   
-# Repatition des taches :
-  - QUENTIN BERDAL                   Systéme
-  - NGUYEN Killain                  APPLICATION / Systéme ( Programme)                
-  - Hourdeaux Bastien               Application / Systéme (Programme)
+## Répartition des tâches :
+  - Berdal Quentin    : Système / Driver
+  - NGUYEN Killain    : Application / Système               
+  - Hourdeaux Bastien : Application / Système
   
-# Test procédure de test :
-  Quentin       Application
-  Bastien, Killian                  Systéme
+## Responsables des tests :
+ - Application        : Quentin
+ - Système            : Bastien, Killian
 
