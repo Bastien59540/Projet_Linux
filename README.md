@@ -13,7 +13,8 @@
  - Platine DEC
  
 ## Langage Utilisé :
-  - Python (application)
+  - C++ (application)
+  - Python(test)
   - langage C (noyau)
   
   
