@@ -1,0 +1,104 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QStringList>
+#include "ui_mainwindow.h"
+
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+    Ui::MainWindow *ui;
+
+private:
+
+public slots:
+    void FormCarre();
+    void FormTriangle();
+    void Formcercle();
+    void gauche();
+    void droite();
+    void Quitter();
+    void Connect();
+    void statReport(QString);
+};
+
+#endif // MAINWINDOW_H
+
+
+
+code *********************
+
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+    connect(ui->FormCa,SIGNAL(clicked(bool)),this,SLOT(FormCarre()));
+    connect(ui->FormTri,SIGNAL(clicked(bool)),this,SLOT(FormTriangle()));
+    connect(ui->FromCe,SIGNAL(clicked(bool)),this,SLOT(Formcercle()));
+    connect(ui->Droite,SIGNAL(clicked(bool)),this,SLOT(droite()));
+    connect(ui->Gauche,SIGNAL(clicked(bool)),this,SLOT(gauche()));
+    connect(ui->Quitter,SIGNAL(clicked(bool)),this,SLOT(Quitter()));
+    connect(ui->Connecter,SIGNAL(clicked(bool)),this,SLOT(Connect()));
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+void MainWindow::FormCarre(void)
+{
+    ui->Select->setText("Forme Carré activé");
+}
+void MainWindow::FormTriangle(void)
+{
+    ui->Select->setText("Forme Triangle activé");
+}
+void MainWindow::Formcercle(void)
+{
+    ui->Select->setText("Forme Circulaire activé");
+}
+void MainWindow::gauche(void)
+{
+    ui->Select->setText("Gauche");
+}
+void MainWindow::droite(void)
+{
+    ui->Select->setText("Droite");
+}
+void MainWindow::Quitter(void)
+{
+    ui->Select->setText("Arrêt Systéme");
+}
+void MainWindow::Connect(void)
+{
+    ui->Select->setText("Connecter");
+}
+
+void MainWindow::statReport(QString a){
+    char b;
+    b=a.at(0).toLatin1();
+    switch(b){
+        case 'O':
+            ui->labelConnect->setText("Online");
+            ui->labelConnect->setStyleSheet("color:green;");
+        break;
+        case 'E':
+        ui->labelConnect->setText("Offline");
+        ui->labelConnect->setStyleSheet("color:red;");
+        break;
+            }
+   }
+
