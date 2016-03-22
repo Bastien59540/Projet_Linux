@@ -1,0 +1,22 @@
+#include "mainwindow.h"
+#include "port_com.h"
+#include <QApplication>
+#include <QThread>
+#include <QObject>
+
+int main(int argc, char *argv[])
+{
+
+    QApplication a(argc, argv);
+
+    MainWindow w;
+    Port_Com c;
+    QObject::connect(w.ui->Gauche,SIGNAL(clicked()),&c,SLOT(Gauche()));
+    QObject::connect(w.ui->Droite,SIGNAL(clicked()),&c,SLOT(Droite()));
+    QObject::connect(w.ui->Quitter,SIGNAL(clicked()),&c,SLOT(Quitter()));
+    QObject::connect(w.ui->Connecter,SIGNAL(clicked()),&c,SLOT(Connecter()));
+    QObject::connect(&c,SIGNAL(statut(QString)),&w,SLOT(statReport(QString)));
+    w.show();
+
+    return a.exec();
+}
