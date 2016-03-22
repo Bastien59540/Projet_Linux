@@ -1,0 +1,61 @@
+#ifndef PROTOCOLE_COM_H
+#define PROTOCOLE_COM_H
+
+#include <QObject>
+#include <QtSerialPort/QSerialPort>
+#include <QThread>
+
+class Protocole_Com : public QObject
+{
+         Q_OBJECT
+public:
+        Protocole_Com();
+
+
+
+ private:
+    QSerialPort *serial;
+    QByteArray rx;
+    bool res;
+  void protocole_essai();
+
+signals:
+
+public slots:
+};
+
+
+
+#endif // PROTOCOLE_COM_H
+
+code **************************************
+
+
+#include "protocole_com.h"
+#include "port_com.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+// Protocole d'essai communication série //
+
+
+Protocole_Com::Protocole_Com()
+{
+
+}
+
+void Protocole_Com::protocole_essai()
+{ 
+    int i=0;
+   serial->write("0110");
+   /*while(i != 50)
+   {
+       serial->read();
+       i++ ;
+
+   }*/
+   while(1)
+      {
+          serial->write("0110");
+   }
+}
