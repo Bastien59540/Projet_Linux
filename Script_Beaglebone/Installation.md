@@ -24,6 +24,7 @@ Vérifier aux démarrage:
   - cat slots
 
 On a bien
+
  0: 54:PF--- 
  1: 55:PF--- 
  2: 56:PF--- 
