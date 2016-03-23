@@ -1,4 +1,4 @@
-<b> Installation <b>
+### Installation
 
 Sur la Beaglebone dans le même dossier insérer les fichier source:
   - main.cpp
