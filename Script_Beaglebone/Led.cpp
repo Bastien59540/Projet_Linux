@@ -11,7 +11,8 @@ FILE *IO_value1 = NULL;
 FILE *IO_value2 = NULL;
 FILE *LEDHandle =NULL;
 
-void LED_BB(int i)
+void LED_BB
+//Led Beaglebone
 {
 if((LEDHandle = fopen(LEDBrightness0, "r+")) != NULL) 
 {
@@ -38,6 +39,7 @@ if((LEDHandle = fopen(LEDBrightness3, "r+")) != NULL)
 }
 
 void LED_VERTE(int i)
+//Led verte
 {
 if((IO_value1 = fopen(IO_VAL1, "r+")) != NULL)
 {
@@ -47,6 +49,7 @@ if((IO_value1 = fopen(IO_VAL1, "r+")) != NULL)
 }
 
 void LED_ROUGE(int i)
+//Led Rouge
 {
 if((IO_value2 = fopen(IO_VAL2, "r+")) != NULL)
 {
