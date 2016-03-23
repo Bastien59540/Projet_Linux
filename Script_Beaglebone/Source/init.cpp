@@ -56,14 +56,12 @@ void init_gpio ()
 
 void init_pwm()
 {
-        periode_P9_14 = fopen("/sys/devices/ocp.3/pwm_test_P9_14.10/period", "w"
-);                      // Initialisation de la periode
+        periode_P9_14 = fopen("/sys/devices/ocp.3/pwm_test_P9_14.10/period", "w");                      // Initialisation de la periode
         fseek(periode_P9_14, 0, SEEK_SET);
         fprintf(periode_P9_14, "%d", periode);
         fflush(periode_P9_14);
 
-        periode_P9_16 = fopen("/sys/devices/ocp.3/pwm_test_P9_16.11/period", "w"
-);
+        periode_P9_16 = fopen("/sys/devices/ocp.3/pwm_test_P9_16.11/period", "w");
         fseek(periode_P9_16, 0, SEEK_SET);
         fprintf(periode_P9_16, "%d", periode);
         fflush(periode_P9_16);
@@ -82,15 +80,13 @@ void init_pwm()
         fprintf(duty_P9_16, "%d", rapport);
         fflush(duty_P9_16);
 
-        polarity_P9_14 = fopen("/sys/devices/ocp.3/pwm_test_P9_14.10/polarity",
-"w");                   // Initialisation de la polarite
+        polarity_P9_14 = fopen("/sys/devices/ocp.3/pwm_test_P9_14.10/polarity", "w");                   // Initialisation de la polarite
         fseek(polarity_P9_14, 0, polarite);
         fprintf(polarity_P9_14, "%d", polarite);
         fflush(polarity_P9_14);
 
-        polarity_P9_16 = fopen("/sys/devices/ocp.3/pwm_test_P9_16.11/polarity",
-"w");
-fseek(polarity_P9_16, 0, polarite);
+        polarity_P9_16 = fopen("/sys/devices/ocp.3/pwm_test_P9_16.11/polarity", "w");
+        fseek(polarity_P9_16, 0, polarite);
         fprintf(polarity_P9_16, "%d", polarite);
         fflush(polarity_P9_16);
         cout << "Initialisation des polarites a:" << polarite << endl;
