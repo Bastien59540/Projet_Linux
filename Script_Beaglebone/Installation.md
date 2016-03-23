@@ -1,6 +1,6 @@
 ### Installation
 
-Sur la Beaglebone dans le même dossier insérer les fichier source:
+Sur la Beaglebone dans le même dossier insérer les fichiers source:
   - main.cpp
   - init.cpp
   - led.cpp
