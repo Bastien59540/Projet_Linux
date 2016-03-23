@@ -16,5 +16,7 @@ Une fois ces fichiers ajouter, nous devons activer le support des PWM dans la be
   - vi uEnv.txt 
 
 Dans le fichier uEnv.txt, rajouter la commande suivante:
-  - optargv =...
+  - optargs=run_hardware_tests quiet capemgr.enable_partno=am33xx_pwm,bone_pwm_P9_14,bone_pwm_P9_16
+Les numéros des PWM dépendra du branchement sur la beaglebone (P9_14, P9_16).
+
 
