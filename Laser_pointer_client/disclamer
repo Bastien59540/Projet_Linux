@@ -1,0 +1,8 @@
+----------------------------------------------
+|    (c) 2016 - Quentin Berdal - INSSET      |
+|    Licence: GPL v3                         |
+|                                            |
+| Client application to control a motorised  |
+| laser on two axis. Require Qt framework.   |
+|                                            |
+----------------------------------------------

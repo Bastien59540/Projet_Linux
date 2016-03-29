@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+####################################################
+#/------------------------------------------------\#
+# This application have the following requirements #
+#\------------------------------------------------/#
+####################################################
+
+# Framework Qt
+sudo apt-get install build-essential qtbase5-dev qt5-default libqt5serialport5-dev

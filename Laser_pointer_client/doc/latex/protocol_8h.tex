@@ -1,0 +1,188 @@
+\hypertarget{protocol_8h}{}\section{protocol.\+h File Reference}
+\label{protocol_8h}\index{protocol.\+h@{protocol.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmessage}{message}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structmessage}{message} \hyperlink{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{Message}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bc}{Protocol} \+: unsigned char \{ \\*
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa67e934c7b9fcd7986f2122cbb316c90}{S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R} =1, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9ff6e0136f603bd7b79bf27bf3bcf631}{S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A} =2, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca32f4638400387174a8f7ec501559ea7e}{S\+T\+O\+P\+\_\+\+D\+A\+T\+A} =3, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa9a20b0c7a383cd6aa2742298b10a627}{S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E} =4, 
+\\*
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca1c986c1141c1160cd172cbde2ce18166}{N\+A\+C\+K} =21, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca41246e9c8691b7e33bc79b345e06b48e}{A\+C\+K} =6, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcadf9227ae7f4f43eb87b8648334d70486}{M\+O\+D\+E\+\_\+\+A\+U\+T\+O} =19, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa56e5070fb0450a65a216279d93fe934}{M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G} =20, 
+\\*
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca672168f72a883ddaff3605bb9b3e696b}{D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R} =29, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcad9ff273a12ff18b3e1b900080aadd1ea}{C\+U\+B\+E} =40, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca59c6b7739f239fb18fe5c81692358893}{E\+L\+L\+I\+P\+S\+E} =41, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2fd33892864d1c342d3bead2f2d9ad56}{T\+R\+I\+A\+N\+G\+L\+E} =42, 
+\\*
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2f68568c4f2b54aa1007c249ff0d75ed}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T} =0, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9aa52b99370653232b3c1482f2732b6c}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T} =180, 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca831aca8dcd0e3a3fdb63b9c87ea7a412}{T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T} =32
+ \}
+\item 
+enum \hyperlink{protocol_8h_a001559174c1105d69e7939fd2d1dcebc}{Error\+Code} \+: unsigned char \{ \hyperlink{protocol_8h_a001559174c1105d69e7939fd2d1dcebca86d8adc4c0423a641dc4cdeaa20bbb74}{N\+O\+\_\+\+F\+R\+A\+M\+E} =0, 
+\hyperlink{protocol_8h_a001559174c1105d69e7939fd2d1dcebca5ebb369e927979b7c092415b36f807db}{U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{protocol_8h_a9776eee48cf368cd56f8abf85a993a10}{Apply\+Protocol} (\hyperlink{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{Message} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Write a transmitable array. \end{DoxyCompactList}\item 
+\hyperlink{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{Message} $\ast$ \hyperlink{protocol_8h_ae6d4e4f8050d33a7636d23d1ab67a446}{Read\+Frame} (unsigned char $\ast$frame, unsigned int size)
+\begin{DoxyCompactList}\small\item\em Read a frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{}\index{protocol.\+h@{protocol.\+h}!Message@{Message}}
+\index{Message@{Message}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf message}  {\bf Message}}\label{protocol_8h_ae5051f6f612e6d4218717f733bc50667}
+Structure used by functions to read and write according to the protocol. You can interact with functions only through this structure. No verification is done on the struct, so be carefull when you assign data. Otherwise, you\textquotesingle{}ll send corrupted packet and the board will answer N\+A\+C\+K. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{protocol_8h_a001559174c1105d69e7939fd2d1dcebc}{}\index{protocol.\+h@{protocol.\+h}!Error\+Code@{Error\+Code}}
+\index{Error\+Code@{Error\+Code}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Error\+Code} \+: unsigned char}\label{protocol_8h_a001559174c1105d69e7939fd2d1dcebc}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+\_\+\+F\+R\+A\+M\+E@{N\+O\+\_\+\+F\+R\+A\+M\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!N\+O\+\_\+\+F\+R\+A\+M\+E@{N\+O\+\_\+\+F\+R\+A\+M\+E}}\item[{\em 
+\hypertarget{protocol_8h_a001559174c1105d69e7939fd2d1dcebca86d8adc4c0423a641dc4cdeaa20bbb74}{}N\+O\+\_\+\+F\+R\+A\+M\+E\label{protocol_8h_a001559174c1105d69e7939fd2d1dcebca86d8adc4c0423a641dc4cdeaa20bbb74}
+}]\index{U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E@{U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E@{U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E}}\item[{\em 
+\hypertarget{protocol_8h_a001559174c1105d69e7939fd2d1dcebca5ebb369e927979b7c092415b36f807db}{}U\+N\+T\+E\+R\+M\+I\+N\+A\+T\+E\+D\+\_\+\+F\+R\+A\+M\+E\label{protocol_8h_a001559174c1105d69e7939fd2d1dcebca5ebb369e927979b7c092415b36f807db}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 26 of file protocol.\+h.
+
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bc}{}\index{protocol.\+h@{protocol.\+h}!Protocol@{Protocol}}
+\index{Protocol@{Protocol}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{Protocol}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Protocol} \+: unsigned char}\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bc}
+\begin{DoxyAuthor}{Author}
+Quentin Berdal 
+\end{DoxyAuthor}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R@{S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R@{S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa67e934c7b9fcd7986f2122cbb316c90}{}S\+T\+A\+R\+T\+\_\+\+H\+E\+A\+D\+E\+R\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa67e934c7b9fcd7986f2122cbb316c90}
+}]\index{S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A@{S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A@{S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9ff6e0136f603bd7b79bf27bf3bcf631}{}S\+T\+A\+R\+T\+\_\+\+D\+A\+T\+A\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9ff6e0136f603bd7b79bf27bf3bcf631}
+}]\index{S\+T\+O\+P\+\_\+\+D\+A\+T\+A@{S\+T\+O\+P\+\_\+\+D\+A\+T\+A}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!S\+T\+O\+P\+\_\+\+D\+A\+T\+A@{S\+T\+O\+P\+\_\+\+D\+A\+T\+A}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca32f4638400387174a8f7ec501559ea7e}{}S\+T\+O\+P\+\_\+\+D\+A\+T\+A\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca32f4638400387174a8f7ec501559ea7e}
+}]\index{S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E@{S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E@{S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa9a20b0c7a383cd6aa2742298b10a627}{}S\+T\+O\+P\+\_\+\+F\+R\+A\+M\+E\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa9a20b0c7a383cd6aa2742298b10a627}
+}]\index{N\+A\+C\+K@{N\+A\+C\+K}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!N\+A\+C\+K@{N\+A\+C\+K}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca1c986c1141c1160cd172cbde2ce18166}{}N\+A\+C\+K\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca1c986c1141c1160cd172cbde2ce18166}
+}]\index{A\+C\+K@{A\+C\+K}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!A\+C\+K@{A\+C\+K}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca41246e9c8691b7e33bc79b345e06b48e}{}A\+C\+K\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca41246e9c8691b7e33bc79b345e06b48e}
+}]\index{M\+O\+D\+E\+\_\+\+A\+U\+T\+O@{M\+O\+D\+E\+\_\+\+A\+U\+T\+O}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!M\+O\+D\+E\+\_\+\+A\+U\+T\+O@{M\+O\+D\+E\+\_\+\+A\+U\+T\+O}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcadf9227ae7f4f43eb87b8648334d70486}{}M\+O\+D\+E\+\_\+\+A\+U\+T\+O\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcadf9227ae7f4f43eb87b8648334d70486}
+}]\index{M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G@{M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G@{M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa56e5070fb0450a65a216279d93fe934}{}M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcaa56e5070fb0450a65a216279d93fe934}
+}]\index{D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca672168f72a883ddaff3605bb9b3e696b}{}D\+A\+T\+A\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca672168f72a883ddaff3605bb9b3e696b}
+}]\index{C\+U\+B\+E@{C\+U\+B\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!C\+U\+B\+E@{C\+U\+B\+E}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcad9ff273a12ff18b3e1b900080aadd1ea}{}C\+U\+B\+E\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bcad9ff273a12ff18b3e1b900080aadd1ea}
+}]\index{E\+L\+L\+I\+P\+S\+E@{E\+L\+L\+I\+P\+S\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!E\+L\+L\+I\+P\+S\+E@{E\+L\+L\+I\+P\+S\+E}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca59c6b7739f239fb18fe5c81692358893}{}E\+L\+L\+I\+P\+S\+E\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca59c6b7739f239fb18fe5c81692358893}
+}]\index{T\+R\+I\+A\+N\+G\+L\+E@{T\+R\+I\+A\+N\+G\+L\+E}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!T\+R\+I\+A\+N\+G\+L\+E@{T\+R\+I\+A\+N\+G\+L\+E}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2fd33892864d1c342d3bead2f2d9ad56}{}T\+R\+I\+A\+N\+G\+L\+E\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2fd33892864d1c342d3bead2f2d9ad56}
+}]\index{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T@{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T@{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2f68568c4f2b54aa1007c249ff0d75ed}{}P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+I\+M\+I\+T\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca2f68568c4f2b54aa1007c249ff0d75ed}
+}]\index{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T@{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T@{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9aa52b99370653232b3c1482f2732b6c}{}P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+I\+T\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca9aa52b99370653232b3c1482f2732b6c}
+}]\index{T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T@{T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T@{T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T}}\item[{\em 
+\hypertarget{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca831aca8dcd0e3a3fdb63b9c87ea7a412}{}T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+O\+F\+F\+S\+E\+T\label{protocol_8h_ad327bde01da3f3f8f71ae03db02572bca831aca8dcd0e3a3fdb63b9c87ea7a412}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 7 of file protocol.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{protocol_8h_a9776eee48cf368cd56f8abf85a993a10}{}\index{protocol.\+h@{protocol.\+h}!Apply\+Protocol@{Apply\+Protocol}}
+\index{Apply\+Protocol@{Apply\+Protocol}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{Apply\+Protocol(\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Apply\+Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{protocol_8h_a9776eee48cf368cd56f8abf85a993a10}
+
+
+Write a transmitable array. 
+
+Write a transmitable array. $<$ Apply transmission offset on data 
+\begin{DoxyParams}{Parameters}
+{\em msg} & Write a transmitable array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file protocol.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{protocol_8h_a9776eee48cf368cd56f8abf85a993a10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{protocol_8h_ae6d4e4f8050d33a7636d23d1ab67a446}{}\index{protocol.\+h@{protocol.\+h}!Read\+Frame@{Read\+Frame}}
+\index{Read\+Frame@{Read\+Frame}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{Read\+Frame(unsigned char $\ast$frame, unsigned int size)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}$\ast$ Read\+Frame (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{frame, }
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)}\label{protocol_8h_ae6d4e4f8050d33a7636d23d1ab67a446}
+
+
+Read a frame. 
+
+$<$ Search for a \char`\"{}start of header\char`\"{} char
+
+$<$ If no header
+
+$<$ If receiving standard data
+
+$<$ Read all data
+
+$<$ If reach end without encountering S\+T\+O\+P\+\_\+\+D\+A\+T\+A and S\+T\+O\+P\+\_\+\+T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N
+
+$<$ If no data block
+
+$<$ If receiving a N\+A\+C\+K or A\+C\+K 
+
+Definition at line 26 of file protocol.\+cpp.
+

@@ -1,0 +1,59 @@
+\hypertarget{structmessage}{}\section{message Struct Reference}
+\label{structmessage}\index{message@{message}}
+
+
+{\ttfamily \#include $<$protocol.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{protocol_8h_ad327bde01da3f3f8f71ae03db02572bc}{Protocol} \hyperlink{structmessage_a09bed901f53052cc020ab6ec8d64e3ee}{mode}
+\item 
+unsigned char $\ast$ \hyperlink{structmessage_a56cfb15f3cbc41b9b8e5e0ba34d6bea4}{data}
+\begin{DoxyCompactList}\small\item\em Pointer to an array of data. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{structmessage_a3a17f9f2aa68b473300ae38d4bad06e8}{data\+\_\+size} =0
+\begin{DoxyCompactList}\small\item\em Number of data in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure used by functions to read and write according to the protocol. You can interact with functions only through this structure. No verification is done on the struct, so be carefull when you assign data. Otherwise, you\textquotesingle{}ll send corrupted packet and the board will answer N\+A\+C\+K. 
+
+Definition at line 38 of file protocol.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmessage_a56cfb15f3cbc41b9b8e5e0ba34d6bea4}{}\index{message@{message}!data@{data}}
+\index{data@{data}!message@{message}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ message\+::data}\label{structmessage_a56cfb15f3cbc41b9b8e5e0ba34d6bea4}
+
+
+Pointer to an array of data. 
+
+
+
+Definition at line 42 of file protocol.\+h.
+
+\hypertarget{structmessage_a3a17f9f2aa68b473300ae38d4bad06e8}{}\index{message@{message}!data\+\_\+size@{data\+\_\+size}}
+\index{data\+\_\+size@{data\+\_\+size}!message@{message}}
+\subsubsection[{data\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int message\+::data\+\_\+size =0}\label{structmessage_a3a17f9f2aa68b473300ae38d4bad06e8}
+
+
+Number of data in the array. 
+
+
+
+Definition at line 43 of file protocol.\+h.
+
+\hypertarget{structmessage_a09bed901f53052cc020ab6ec8d64e3ee}{}\index{message@{message}!mode@{mode}}
+\index{mode@{mode}!message@{message}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Protocol} message\+::mode}\label{structmessage_a09bed901f53052cc020ab6ec8d64e3ee}
+Describe the type of packet. Accept A\+C\+K, N\+A\+C\+K, M\+O\+D\+E\+\_\+\+A\+U\+T\+O and M\+O\+D\+E\+\_\+\+T\+R\+A\+C\+K\+I\+N\+G 
+
+Definition at line 40 of file protocol.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{protocol_8h}{protocol.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{protocol_8cpp}{}\section{protocol.\+cpp File Reference}
+\label{protocol_8cpp}\index{protocol.\+cpp@{protocol.\+cpp}}
+{\ttfamily \#include \char`\"{}protocol.\+h\char`\"{}}\\*
+Include dependency graph for protocol.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{protocol_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{protocol_8cpp_a9776eee48cf368cd56f8abf85a993a10}{Apply\+Protocol} (\hyperlink{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{Message} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Both native and Qt implementation. \end{DoxyCompactList}\item 
+\hyperlink{protocol_8h_ae5051f6f612e6d4218717f733bc50667}{Message} $\ast$ \hyperlink{protocol_8cpp_ae6d4e4f8050d33a7636d23d1ab67a446}{Read\+Frame} (unsigned char $\ast$frame, unsigned int size)
+\begin{DoxyCompactList}\small\item\em Read a frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{protocol_8cpp_a9776eee48cf368cd56f8abf85a993a10}{}\index{protocol.\+cpp@{protocol.\+cpp}!Apply\+Protocol@{Apply\+Protocol}}
+\index{Apply\+Protocol@{Apply\+Protocol}!protocol.\+cpp@{protocol.\+cpp}}
+\subsubsection[{Apply\+Protocol(\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Apply\+Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{protocol_8cpp_a9776eee48cf368cd56f8abf85a993a10}
+
+
+Both native and Qt implementation. 
+
+Write a transmitable array. $<$ Apply transmission offset on data 
+\begin{DoxyParams}{Parameters}
+{\em msg} & Write a transmitable array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file protocol.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{protocol_8cpp_a9776eee48cf368cd56f8abf85a993a10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{protocol_8cpp_ae6d4e4f8050d33a7636d23d1ab67a446}{}\index{protocol.\+cpp@{protocol.\+cpp}!Read\+Frame@{Read\+Frame}}
+\index{Read\+Frame@{Read\+Frame}!protocol.\+cpp@{protocol.\+cpp}}
+\subsubsection[{Read\+Frame(unsigned char $\ast$frame, unsigned int size)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}$\ast$ Read\+Frame (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{frame, }
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)}\label{protocol_8cpp_ae6d4e4f8050d33a7636d23d1ab67a446}
+
+
+Read a frame. 
+
+$<$ Search for a \char`\"{}start of header\char`\"{} char
+
+$<$ If no header
+
+$<$ If receiving standard data
+
+$<$ Read all data
+
+$<$ If reach end without encountering S\+T\+O\+P\+\_\+\+D\+A\+T\+A and S\+T\+O\+P\+\_\+\+T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N
+
+$<$ If no data block
+
+$<$ If receiving a N\+A\+C\+K or A\+C\+K 
+
+Definition at line 26 of file protocol.\+cpp.
+
