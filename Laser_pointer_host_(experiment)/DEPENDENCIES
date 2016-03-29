@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+####################################################
+#/------------------------------------------------\#
+# This application have the following requirements #
+#\------------------------------------------------/#
+####################################################
+
+# qmake
+sudo apt-get install build-essential libc6-dev qt5-qmake
+
+echo 
+echo "Do you want to cross compile ? [Y/n] "
+echo -n "> "
+read choice
+echo 
+if [ $choice == "Y" ]; then
+	# cross-compiler
+	sudo apt-get install binutils-arm-linux-gnueabi g++-arm-linux-gnueabi libncurses5-dev
+	export ARCH=arm 
+	export CROSS_COMPILE=arm-linux-gnueabi-
+fi
+echo 

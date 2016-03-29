@@ -1,0 +1,10 @@
+----------------------------------------------
+|    (c) 2016 - Quentin Berdal - INSSET      |
+|    Licence: GPL v3                         |
+|                                            |
+| Host application to control a motorised    |
+| laser on two axis.                         |
+| You must have "termios.h" header in your   |
+| lib path in order to compile.              |
+|                                            |
+----------------------------------------------
